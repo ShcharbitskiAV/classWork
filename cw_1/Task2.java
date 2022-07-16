@@ -1,21 +1,9 @@
-import java.util.Scanner;
-
-public class Task2 {
+public class task2 {
     public static void main(String[] args) {
-        Scanner timeofday = new Scanner(System.in);
-        byte time = timeofday.nextByte();
-
-        if (time >= 0 && time <= 6) {
-            System.out.println("Good night");
-
-        } else if (time > 6 && time <= 12) {
-            System.out.println("Good morning");
-
-        } else if (time > 12 && time < 19) {
-            System.out.println("Good afternoon");
-
-        } else if (time >= 19 && time <= 24) {
-            System.out.println("Good evening");
-        }
+        int n = 137;
+        int b = n / 100;
+        int p = (n / 10) % 10;
+        int c = n % 10;
+        System.out.println(b + p + c);
     }
 }

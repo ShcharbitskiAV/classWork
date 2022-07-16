@@ -1,15 +1,12 @@
-import java.util.Scanner;
-
-public class Task6 {
+public class task6 {
     public static void main(String[] args) {
-        Scanner days = new Scanner(System.in);
-        System.out.print("Input the year: ");
-        int year = days.nextInt();
+        final byte w = 3;
+        final byte h = 5;
 
-        if (year % 4 == 0 && year % 400 == 0 | year % 100 > 0) {
-            System.out.println("366 days"); }
-        else {
-            System.out.println("365 days");
-        }
-    }
+        byte s = w*h;
+        byte p = (w+h)*2;
+
+        System.out.println(s);
+        System.out.println(p);
+}
 }

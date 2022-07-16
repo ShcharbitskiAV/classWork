@@ -1,24 +1,21 @@
+import java.util.Locale;
 import java.util.Scanner;
 
-public class Task9 {
+public class task9 {
     public static void main(String[] args) {
-        Scanner road = new Scanner(System.in);
-        System.out.print("Enter road section: ");
-        int x = road.nextInt(); //Отрезок дороги протяженностью в 20 км: первые 5 ровная дорога,
-                                // затем 7 км - подьем, спуск 3 км и в конце снова ровная.
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.UK);
+        System.out.print("Input a number: ");
+        double num = in.nextDouble();
 
+        if((num %1) == 0) {
 
-        if (x >= 0 && x<= 5) {
-            System.out.println("Smooth road");
-        }
-        else if (x > 5 && x <= 12) {
-            System.out.println("Road up");
-        }
-        else if (x > 12 && x <= 15) {
-            System.out.println("Downhill");
-        }
-        else if (x > 15 && x <= 20) {
-            System.out.println("Again smooth road");
+            System.out.println("num is an integer");
+
+        } else {
+
+            System.out.println("num is not an integer");
+
         }
     }
 }
